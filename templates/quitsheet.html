@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AG HR portal</title>
+</head>
+<body>
+<br/>
+
+<div class="container">
+    <div class="panel panel-primary" style="width:100% ;margin:0px; auto">
+
+        <form>
+
+            <!-- Search input-->
+            <div class="form-group">
+                <label for="employeesearch">Поиск сотрудника</label>
+                <div>
+                    <input id="employeesearch" name="employeesearch" type="search" placeholder="выберите сотрудника"
+                           class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label for="epmloyee">ФИО:</label>
+                <div>
+                    <input id="epmloyee" name="epmloyee" type="text" placeholder="" class="form-control input-md"
+                           required="" readonly>
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label for="division">Подразделение</label>
+                <div>
+                    <input id="division" name="division" type="text" placeholder="" class="form-control input-md"
+                           readonly>
+                    <small id="division_full" class="form-text text-muted">иерархия подразделения</small>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label for="dismissal_date">Дата увольнения</label>
+                <div>
+                    <input id="dismissal_date" name="dismissal_date" type="date" placeholder="укажите дату"
+                           class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="dismissal_reason">Причина увольнения</label>
+                <div>
+                    <textarea class="form-control" id="dismissal_reason"
+                              name="dismissal_reason">укажите причину</textarea>
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label for="buttonsubmit"></label>
+                <div>
+                    <button id="buttonsubmit" name="buttonsubmit" class="btn btn-success">Сохранить</button>
+                    <button id="buttoncancel" name="buttoncancel" class="btn btn-danger">Отмена</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
